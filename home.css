@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav ul {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    font-size: large;
+    align-items: center;
+    border: blue;
+}
+
+nav ul li {
+    margin-left: 30px;
+    color: black;
+    border-radius: 10px;
+    border-color: red;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: auto;
+}
+
+.maindiv {
+    background-color: rgb(2, 41, 80);
+    background-image: url("1.jpg");
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: slider 25s infinite linear;
+    -webkit-animation: slider 25s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url("1.jpg");
+    }
+
+    20% {
+        background-image: url("2.jpeg");
+    }
+
+    40% {
+        background-image: url("3.jpg");
+    }
+
+    60% {
+        background-image: url("5.jpg");
+    }
+
+    80% {
+        background-image: url("4.jpg");
+    }
+}
+
+/* Add keyframes to control text opacity */
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+nav ul li:hover {
+    color: red;
+}
+
+.maindiv {
+    justify-content: center;
+}
+
+.custom-hr {
+    border-color: black;
+}
+
+/* Apply text animation */
+h1 {
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    animation: textFadeIn 25s infinite linear;
+}

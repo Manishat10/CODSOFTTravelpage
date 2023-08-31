@@ -1,0 +1,60 @@
+h1 {
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    margin: 0.1%;
+}
+
+h2 {
+    font-size: 50px;
+    color: rgb(3, 3, 60);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    margin-right: 20px;
+}
+
+p {
+    flex: 1;
+}
+
+.btn {
+    background-color: red;
+    color: bisque;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 40px;
+    color: rgb(3, 3, 60);
+}
+
+p {
+    font-size: 18px;
+}
+
+span {
+    font-weight: bold;
+
+}
+
+h4 {
+    font-size: 30px;
+    color: rgb(4, 4, 94);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
